@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
+	<script>
+
+var countDownDate = new Date("July 31, 2020 15:37:25").getTime();
+
+var x = setInterval(function() {
+
+  var now = new Date().getTime();
+
+  var distance = countDownDate - now;
+
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+    <title>Wesley Methodist Practising Primary School landing page</title>
+    <link rel="stylesheet" href="style.css">
+	 <div class ="input-container" align="right">
+   <input type="text" placeholder="Search" name="" value="">
+   </div>
+<img src="img/logo.jpg" alt ="logo" width = 80 height=82 >
+	 <span>Wesley Methodist Practising Primary School</span>
+  </head>
+  <body>
+  
+    <div class="menu-bar">
+  <ul>
+<li class="active"><a href="#"></i>Home</a></li>
+<li><a href="#"></i>About Us</a></li>
+  <li><a href="#"></i>Gallery</a></li>
+<li><a href="#"></i>Events</a></li>
+  </ul>
+      </div>
+  <br><br>
+		  <p id="demo"></p>
+		  <br>
+	  <h2> Coming Soon </h2>
+  <div class="footer">
+  <hr>
+  <img src="img/Facebook.png"  alt="facebook icon">
+  <img src="img/Instagram.jpg" alt="instagram icon">
+ <img src="img/Twitter.png"   alt="twitter icon">
+  
+</div>
+  </body>
+</html>
